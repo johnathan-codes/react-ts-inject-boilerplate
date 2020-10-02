@@ -1,0 +1,40 @@
+{
+	"name": "react-ts-inject-boilerplate",
+	"author": "Johnathan Codes",
+	"version": "1.0.0",
+	"description": "Boilerplate for creating injectable js files in React with typescript",
+	"main": "src/index.tsx",
+	"scripts": {
+		"webpack-prod": "webpack --mode production",
+		"webpack-dev": "webpack --mode development",
+		"webpack-errors": "webpack --display-error-details"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
+		"@babel/preset-react": "^7.10.4",
+		"@babel/preset-typescript": "^7.10.4",
+		"@babel/runtime": "^7.11.2",
+		"@types/react": "^16.9.50",
+		"@types/react-dom": "^16.9.8",
+		"@types/webpack": "^4.41.22",
+		"@types/webpack-dev-server": "^3.11.0",
+		"@typescript-eslint/eslint-plugin": "^4.3.0",
+		"@typescript-eslint/parser": "^4.3.0",
+		"babel-loader": "^8.1.0",
+		"eslint": "^7.10.0",
+		"eslint-plugin-react": "^7.21.2",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"ts-loader": "^8.0.4",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.3",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12"
+	}
+}
