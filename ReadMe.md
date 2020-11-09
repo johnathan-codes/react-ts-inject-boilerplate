@@ -35,3 +35,19 @@ This will create a js file in your specified folder.
 Location and file name can be specified in the ouput section of `webpack.config.ts`.
 
 Then in your .cshtml/.html/... file you create a `<script>` tag with `src` location of your bundled js file.
+
+# Additions
+
+- Added [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) for bundle analysis
+- Settings for this boilerplate - change them as you wish
+
+```
+new BundleAnalyzerPlugin({
+	analyzerMode: 'disabled',
+	generateStatsFile: true,
+	statsOptions: { source: false },
+})
+```
+
+- This will generate `stats.json` report file
+- To check the rport run `yarn webpack-report`

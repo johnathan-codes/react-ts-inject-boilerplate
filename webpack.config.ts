@@ -1,8 +1,16 @@
 import path from 'path'
 import webpack from 'webpack'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
 const config: webpack.Configuration = {
 	entry: './src/index.tsx',
+	plugins: [
+		new BundleAnalyzerPlugin({
+			analyzerMode: 'disabled',
+			generateStatsFile: true,
+			statsOptions: { source: false },
+		}),
+	],
 	module: {
 		rules: [
 			{
